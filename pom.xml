@@ -22,34 +22,69 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!--<dependency>-->
-    <!--<groupId>com.alibaba</groupId>-->
-    <!--<artifactId>fastjson</artifactId>-->
-    <!--<version>1.2.8</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>junit</groupId>-->
-    <!--<artifactId>junit</artifactId>-->
-    <!--</dependency>-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-tomcat</artifactId>
-      <scope>provided</scope>
+      <groupId>com.caucho</groupId>
+      <artifactId>hessian</artifactId>
+      <version>4.0.38</version>
     </dependency>
+    <!--<dependency>-->
+    <!--<groupId>org.springframework</groupId>-->
+    <!--<artifactId>spring-core</artifactId>-->
+    <!--<version>3.1.1.RELEASE</version>-->
+    <!--</dependency>-->
     <dependency>
-      <groupId>org.apache.tomcat.embed</groupId>
-      <artifactId>tomcat-embed-jasper</artifactId>
-      <scope>provided</scope>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
     </dependency>
+
     <dependency>
-      <groupId>jstl</groupId>
-      <artifactId>jstl</artifactId>
-      <version>1.2</version>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-webapp</artifactId>
+      <version>9.3.8.v20160314</version>
     </dependency>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--jsp相关jar包-->
+    <!--<dependency>-->
+      <!--<groupId>org.springframework.boot</groupId>-->
+      <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+      <!--<scope>provided</scope>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.apache.tomcat.embed</groupId>-->
+      <!--<artifactId>tomcat-embed-jasper</artifactId>-->
+      <!--<scope>provided</scope>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>jstl</groupId>-->
+      <!--<artifactId>jstl</artifactId>-->
+      <!--<version>1.2</version>-->
+    <!--</dependency>-->
   </dependencies>
   <build>
     <plugins>

@@ -3,6 +3,7 @@ package cn.ms.springboot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.Banner;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
@@ -10,7 +11,19 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 /**
  * Created by weizheng on 2016/5/4.
  */
-@SpringBootApplication
+//@SpringBootApplication
+//public class AppMain{
+//    public static void main(String[] args) {
+//        SpringApplication application = new SpringApplication(AppMain.class);
+//        application.run(args);
+//    }
+//
+//
+//
+//
+//
+//
+//}
 public class AppMain extends SpringBootServletInitializer {
     private static final Logger log = LoggerFactory.getLogger(AppMain.class);
     private static SpringApplicationBuilder applicationBuilder;
