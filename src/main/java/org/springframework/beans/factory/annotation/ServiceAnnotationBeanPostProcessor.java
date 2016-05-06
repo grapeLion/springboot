@@ -27,10 +27,11 @@ public class ServiceAnnotationBeanPostProcessor extends InstantiationAwareBeanPo
 
         Object resultBean = bean;
         if (null!=service){
-
+            System.out.println("bbbbbb");
 
             if (ServiceType.HTTP==service.serviceType()){
 
+                System.out.println("aaaaa");
                 if (beanName.startsWith("/")){
                     throw new FatalBeanException("Exception initializing  HttpInvokerService for "+beanName+",beanName should bean start with \"/\".");
                 }
@@ -39,9 +40,9 @@ public class ServiceAnnotationBeanPostProcessor extends InstantiationAwareBeanPo
                 httpInvokerServiceExporter.setService(bean);
                 httpInvokerServiceExporter.afterPropertiesSet();
                 resultBean = httpInvokerServiceExporter;
-            }else if (ServiceType.HESSIAN == service.serviceType()) {
+            }/*else if (ServiceType.HESSIAN == service.serviceType()) {
 
-                if(!beanName.startsWith("/")){
+                if(beanName.startsWith("/")){
                     throw new FatalBeanException("Exception initializing  HessianService for "+beanName+",beanName should bean start with \"/\".");
                 }
 
@@ -70,7 +71,7 @@ public class ServiceAnnotationBeanPostProcessor extends InstantiationAwareBeanPo
                 }
                 resultBean = rmiServiceExporter;
 
-            }
+            }*/
         }
         return resultBean;
     }

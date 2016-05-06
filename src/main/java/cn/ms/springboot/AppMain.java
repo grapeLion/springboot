@@ -24,6 +24,7 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 //
 //
 //}
+@SpringBootApplication
 public class AppMain extends SpringBootServletInitializer {
     private static final Logger log = LoggerFactory.getLogger(AppMain.class);
     private static SpringApplicationBuilder applicationBuilder;
