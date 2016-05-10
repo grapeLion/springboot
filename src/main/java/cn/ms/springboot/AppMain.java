@@ -11,6 +11,19 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 /**
  * Created by weizheng on 2016/5/4.
  */
+//@SpringBootApplication
+//public class AppMain{
+//    public static void main(String[] args) {
+//        SpringApplication application = new SpringApplication(AppMain.class);
+//        application.run(args);
+//    }
+//
+//
+//
+//
+//
+//
+//}
 @SpringBootApplication
 public class AppMain{
     public static void main(String[] args) {
